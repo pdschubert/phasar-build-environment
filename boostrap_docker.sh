@@ -19,7 +19,6 @@ sudo apt-get install libboost-all-dev -y
 sudo pip3 install wllvm
 
 echo "dependencies successfully installed"
-echo "build phasar..."
 
 export CC=/usr/local/bin/clang
 export CXX=/usr/local/bin/clang++
