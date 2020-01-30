@@ -34,5 +34,5 @@ make -j${num_cores}
 echo "Installing z3..."
 sudo make install
 sudo ldconfig
-cd -
+cd ../..
 echo "Installed z3 successfully."
