@@ -11,5 +11,3 @@ WORKDIR /usr/src/phasar
 COPY . /usr/src/phasar
 
 RUN ./boostrap_docker.sh
-
-ENTRYPOINT [ "./build/tools/phasar-llvm/phasar-llvm" ]

@@ -34,4 +34,5 @@ make -j${num_cores}
 echo "Installing LLVM..."
 sudo make install
 sudo ldconfig
+cd -
 echo "Installed LLVM successfully."
