@@ -19,7 +19,7 @@ z3_release=$3
 echo "Getting the Z3 source code..."
 if [ ! -d "${target_dir}/z3" ]; then
     echo "Getting the complete z3 source code"
-	git clone https://github.com/Z3Prover/z3.git ${target_dir}/llvm-project
+	git clone https://github.com/Z3Prover/z3.git ${target_dir}/z3
 fi
 echo "Building z3..."
 cd ${target_dir}/z3/
