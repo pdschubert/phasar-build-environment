@@ -34,5 +34,9 @@ make -j${num_cores}
 echo "Installing z3..."
 sudo make install
 sudo ldconfig
-cd ../..
+# delete build directory
+cd ..
+rm -rf build/
+# jump back into root directory
+cd ..
 echo "Installed z3 successfully."

@@ -29,10 +29,12 @@ mkdir -p build
 cd build
 cmake -G "Unix Makefiles" -DLLVM_ENABLE_PROJECTS='clang;clang-tools-extra;libcxx;libcxxabi;libunwind;lld;lldb;compiler-rt;lld;polly;debuginfo-tests;openmp;parallel-libs' -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_CXX1Y=ON -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DBUILD_SHARED_LIBS=ON ../llvm
 make -j${num_cores}
-# echo "Run all tests"
-# make -j3 check-all
 echo "Installing LLVM..."
 sudo make install
 sudo ldconfig
-cd ../..
+# delete build directory
+cd ..
+rm -rf build/
+# jump back into root directory
+cd ..
 echo "Installed LLVM successfully."
