@@ -32,13 +32,13 @@ RUN pip3 install wllvm
 ENV CC /usr/local/bin/clang
 ENV CXX /usr/local/bin/clang++
 
-COPY . /usr/src/phasar
-
-RUN mkdir -p build &&                       \
-    cd build &&                             \
-    cmake -DCMAKE_BUILD_TYPE=Release .. &&  \
-    make -j $(nproc) &&                     \
-    make install &&                         \
-    ldconfig
-
-ENTRYPOINT [ "./build/tools/phasar-llvm/phasar-llvm" ]
+# COPY . /usr/src/phasar
+# 
+# RUN mkdir -p build &&                       \
+#     cd build &&                             \
+#     cmake -DCMAKE_BUILD_TYPE=Release .. &&  \
+#     make -j $(nproc) &&                     \
+#     make install &&                         \
+#     ldconfig
+# 
+# ENTRYPOINT [ "./build/tools/phasar-llvm/phasar-llvm" ]
