@@ -13,7 +13,7 @@ RUN ./utils/InitializeEnvironment.sh
 COPY ./utils/InstallAptDependencies.sh /usr/src/phasar/utils/
 RUN ./utils/InstallAptDependencies.sh
 
-RUN pip install Pygments pyyaml
+RUN pip3 install Pygments pyyaml
 
 # installing boost
 RUN apt-get install libboost-all-dev -y

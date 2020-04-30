@@ -8,8 +8,8 @@ Z3_RELEASE=z3-4.8.7
 ./utils/InitializeEnvironment.sh
 ./utils/InstallAptDependencies.sh
 
-sudo pip install Pygments
-sudo pip install pyyaml
+sudo pip3 install Pygments
+sudo pip3 install pyyaml
 
 # installing boost
 sudo apt-get install libboost-all-dev -y
